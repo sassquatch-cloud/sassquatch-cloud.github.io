@@ -1,0 +1,63 @@
+title: Your Site Title
+description: Notes, reviews, and journal.
+url: https://yourusername.github.io
+theme: null
+remote_theme: "mmistakes/minimal-mistakes@latest"
+
+# Site-wide
+locale: en-US
+timezone: America/Los_Angeles
+
+# Author (optional)
+author:
+  name: "Your Name"
+
+# Minimal Mistakes options
+minimal_mistakes_skin: default # other: dark, neon, air, contrast, etc.
+search: true
+
+# Navigation
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:title/
+  journal:
+    output: true
+    permalink: /journal/:title/
+
+# Posts (classic blog)
+collections_dir: .
+permalink: /:categories/:title/
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Defaults for different content types
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: "reviews"
+      type: reviews
+    values:
+      layout: single
+      author_profile: false
+  - scope:
+      path: "journal"
+      type: journal
+    values:
+      layout: single
+      author_profile: false

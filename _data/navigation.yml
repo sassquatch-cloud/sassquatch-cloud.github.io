@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Reviews"
+    url: /reviews/
+  - title: "Journal"
+    url: /journal/
+  - title: "About"
+    url: /about/
