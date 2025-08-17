@@ -2,7 +2,7 @@ title: Your Site Title
 description: Notes, reviews, and journal.
 url: https://yourusername.github.io
 theme: null
-remote_theme: "mmistakes/minimal-mistakes@latest"
+remote_theme: "mmistakes/minimal-mistakes"
 
 # Site-wide
 locale: en-US
